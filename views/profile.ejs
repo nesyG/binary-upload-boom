@@ -1,8 +1,17 @@
 <%- include('partials/header') -%>
+<div class="feed-container" style="position: absolute; width: 10rem;">
+  <a class="btn bg-gradient bg-dark text-light border border-white" style="overflow:auto" href="/feed">Return to Feed</a>
+</div>  
 <div class="container">
-  <div class="row mt-5">
+  <div>
       <div class="col-6">
-          <div>
+          <div class="bg-secondary" style="width: 60vh; margin-top: 4rem;">
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <label for="imgUpload" class="form-label">Your Profile Image</label>
+              <input type="file" class="form-control" id="profileFile" name="profileFile">
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+            </form>
+            
               <p><strong>User Name</strong>: <%= user.userName %></p>
               <p><strong>Email</strong>: <%= user.email %></p>
               <a href="/logout" class="col-3 btn btn-primary">Logout</a>
@@ -36,9 +45,6 @@
           </li>
         <% } %>
         </ul>
-        <div class="row justify-content-center mt-5">
-          <a class="btn btn-primary" href="/feed">Return to Feed</a>
-        </div>  
       </div>  
     </div>
   </div>

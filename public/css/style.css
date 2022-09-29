@@ -1,0 +1,27 @@
+
+
+.main-container {
+    height: 60vh;
+    width: 39%;
+}
+
+.text-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    opacity: 90%;
+    width: max-content;
+    padding: 1rem 4rem;
+    
+}
+
+.login-style {
+    width: 40%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: large
+}
+
+.feed-container {
+    margin-top:7rem;
+    margin-left: 7rem;
+}

@@ -1,7 +1,7 @@
 <%- include('partials/header') -%>
 
 <main class="container">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center bg-secondary border rounded" style="width: 40%; padding-bottom:3rem; margin:3rem auto; opacity:95%;">
     <section class="col-6 mt-5">
       <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
       <div class="alert alert-danger"><%= el.msg %></div>
@@ -31,7 +31,7 @@
             name="password"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn bg-warning border border-secondary " style="font-weight:600 ;">Submit</button>
       </form>
     </section>
   </div>
